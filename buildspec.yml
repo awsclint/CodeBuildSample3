@@ -3,7 +3,6 @@ version: 0.1
 phases:
   install:
     commands:
-      - apt-get install ruby-full
       - echo Installing RSpec...
       - gem install rspec
       - echo ruby --version
