@@ -3,6 +3,12 @@ version: 0.1
 phases:
   install:
     commands:
+      - 
+      - add-apt-repository main
+      - add-apt-repository universe
+      - add-apt-repository restricted
+      - add-apt-repository multiverse
+      - apt-get update
       - apt-get install ruby-full
       - echo Installing RSpec...
       - gem install rspec
