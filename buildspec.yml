@@ -3,9 +3,9 @@ version: 0.1
 phases:
   install:
     commands:
+      - echo $(ruby --version)
       - echo Installing RSpec...
       - gem install rspec
-      - echo ruby --version
   build:
     commands:
       - echo Build started on `date`
